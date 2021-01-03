@@ -1,5 +1,6 @@
 package com.kontrakkan.blog.modules.demo.presenter;
 
+import com.kontrakkan.blog.helper.Log;
 import com.kontrakkan.blog.modules.demo.usecase.DemoUsecaseInterface;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,6 +18,7 @@ public class DemoController {
     @RequestMapping(value = "/demo")
     @ResponseBody
     public String getDemoData() {
+        Log.traceLog("url /demo  is accessed", DemoController.class);
         return "<h1>" + demoUsecase.getDemoData().getDemoMessage() + "</h1>";
     }
 }
