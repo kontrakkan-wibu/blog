@@ -9,6 +9,10 @@ Perintah install dependency:
 mvn install 
 ```
 </br>
-Perintah menjalankan : mvn springboot:run</br>
+Perintah menjalankan : 
+```
+mvn springboot:run
+```
+</br>
 
 
